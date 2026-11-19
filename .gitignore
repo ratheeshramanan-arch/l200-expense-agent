@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+
+# Local secrets & runtime databases (NEVER commit secrets)
+.env
+.env.local
+*.db
+*.sqlite
+*.sqlite3
+
+# Terraform state & local provider cache
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.*
+terraform/*.tfvars
+!terraform/terraform.tfvars.example
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
